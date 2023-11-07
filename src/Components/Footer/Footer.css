@@ -1,0 +1,54 @@
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer .top
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    padding: 50px;
+}
+.footer .top .description img
+{
+    margin-bottom: 10px;
+}
+.footer .top .about
+{
+    padding-left: 100px;
+}
+.footer .top div
+{
+    width: 30%;
+    margin-bottom: 10px;
+}
+.footer p
+{
+    font-size: 16px;
+    color: #2f2f2f;
+    font-weight: 200;
+    width: 100%;
+    margin: 3px 0px;
+}
+.footer .bottom
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    padding: 30px;
+    border-top: 1px solid #e0e0e0;
+}
+.footer h3
+{
+    font-size: 17px;
+    font-weight: 600;
+    color: #2f2f2f;
+}

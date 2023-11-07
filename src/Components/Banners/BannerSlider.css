@@ -1,0 +1,61 @@
+.banner-slider
+{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.banner-slider .banner-slider-item
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+.banner-slider .banner-slider-item img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.banner-slider .banner-slider-item .banner-slider-item-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner-slider .banner-slider-item .banner-slider-item-content h1
+{
+    font-size: 5rem;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.banner-slider .banner-slider-item .banner-slider-item-content p
+{
+    font-size: 2rem;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.banner-slider .banner-slider-item .banner-slider-item-content button
+{
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.banner-slider .banner-slider-item .banner-slider-item-content button:hover
+{
+    background-color: var(--col1);
+    color: aliceblue;
+}

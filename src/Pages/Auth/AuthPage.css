@@ -1,0 +1,106 @@
+.auth-page
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.auth-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.798);
+}
+.auth-form
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 25px;
+    gap: 5px;
+}
+.form-group
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0px;
+    gap: 5px;
+}
+.auth-form h1
+{
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--col1);
+}
+.auth-form label
+{
+    font-size: 17px;
+    font-weight: 500;
+    color: aliceblue;
+}
+.auth-form input
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.042);
+    color: aliceblue;
+}
+.auth-form .btn
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--col1);
+    color: aliceblue;
+    cursor: pointer;
+}
+.auth-form button:hover
+{
+    background-color: aliceblue;
+    color: var(--col1);
+}
+.auth-form p 
+{
+    font-size: 17px;
+    font-weight: 100;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 5px;
+    padding: 0px;
+    text-align: right;
+}
+.auth-form p:hover
+{
+    color: var(--col1);
+    cursor: pointer;
+}
+.auth-form .or
+{
+    text-align: center;
+    margin: 10px 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.auth-form .form-group-row
+{
+    display: flex;
+    gap: 10px;
+}
