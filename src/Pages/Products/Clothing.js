@@ -6,7 +6,6 @@ const Clothing = () => {
     <div>
         <Navbar />
         <p>Clothing</p>
-        <p>Hello</p>
     </div>
   )
 }
