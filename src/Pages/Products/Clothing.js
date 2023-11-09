@@ -6,6 +6,8 @@ const Clothing = () => {
     <div>
         <Navbar />
         <p>Clothing</p>
+        <p>Hello</p>
+        <p>Sample</p>
     </div>
   )
 }
