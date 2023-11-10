@@ -24,3 +24,34 @@
     transform:scale(1.05);
     transition :0.6s ;
 }
+.item {
+    /* Your existing styles for the item container */
+  
+    /* Add the following styles for the buttons */
+    .item-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  
+    .add-to-cart-button,
+    .buy-now-button {
+      padding: 8px 12px;
+      background-color:white; /* Green color, you can change it */
+      color: rgb(24, 23, 23);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      
+    }
+    .add-to-cart-button{margin-right: 10px;}
+  
+    .add-to-cart-button:hover,
+    .buy-now-button:hover {
+      background-color: #45a049; /* Darker green on hover, you can change it */
+    }
+  }
+  

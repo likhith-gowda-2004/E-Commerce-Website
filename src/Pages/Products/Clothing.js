@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
-import './Clothing.css'
+import './Product.css'
 import Item from '../../Components/Item/Item';
 import women from '../../Assets/womens';
 import men from '../../Assets/mens';
