@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar';
-import './grocery.css';
+import './Product.css';
 import Item from '../../Components/Item/Item';
 import grocery from '../../Assets/g_01';
 const Grocery = () => {

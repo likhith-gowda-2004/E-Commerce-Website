@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
-import './Electronics.css';
+import '../../Components/Item/Item.css'
 import Item from '../../Components/Item/Item';
 import mobile from '../../Assets/mobile'; // Assuming this is an array of mobile phones
 import laptop from '../../Assets/laptop'; // Assuming this is an array of laptops
