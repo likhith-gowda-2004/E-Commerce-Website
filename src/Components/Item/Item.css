@@ -15,7 +15,7 @@
 
 }
 .item-price-old{
-    color: #8c8c8c;
+    color:rgb(92, 95, 96);
     font-size:18px;
     font-weight:500;
     text-decoration:line-through;
@@ -24,3 +24,36 @@
     transform:scale(1.05);
     transition :0.6s ;
 }
+.item {
+    /* Your existing styles for the item container */
+  
+    /* Add the following styles for the buttons */
+    .item-buttons{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  
+    .add-shopping-cart-icon,
+    .shop-icon{
+      padding: 8px 12px;
+      background-color:rgb(255, 255, 255); /* Green color, you can change it */
+      color: rgb(24, 23, 23);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      
+    }
+    .add-shopping-cart-ico{margin-right: 10px;
+    align-items: end;}
+  
+    .add-shopping-cart-icon:hover,
+    .shop-icon:hover {
+      background-color: #45a049;
+      color: aliceblue; /* Darker green on hover, you can change it */
+    }
+  }
+  
