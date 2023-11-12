@@ -1,6 +1,7 @@
 import React from 'react';
 import './Item.css';
 import ShopIcon from '@mui/icons-material/Shop';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 const Item = (props) => {
   return (
@@ -15,10 +16,9 @@ const Item = (props) => {
           {props.old_price}
         </div>
         <div className="item-buttons">
-      <button className="add-to-cart-button">+</button>
-      <button className="buy-now-button"></button>
-       
-      </div>
+    <AddShoppingCartIcon className="add-shopping-cart-icon"/>
+    <ShopIcon className="shop-icon"/>
+       </div>
 
       </div>
      
