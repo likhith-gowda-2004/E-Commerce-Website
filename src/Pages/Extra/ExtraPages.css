@@ -47,3 +47,24 @@
     /* text-align: center; */
     letter-spacing: 1px;
 }
+
+.pg-content
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-self: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.pg-content h3
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+    margin: 0 0 10px 0;
+    padding: 0;
+    /* text-align: center; */
+    letter-spacing: 1px;
+}

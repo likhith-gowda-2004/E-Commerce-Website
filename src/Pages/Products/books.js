@@ -54,7 +54,7 @@ const Book = ()=> {
     </div>
     <div className='business'>
         <h1>
-              Business
+            Business
             </h1>
             <hr/>
             <div className = "collections">

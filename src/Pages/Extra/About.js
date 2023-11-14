@@ -5,7 +5,6 @@ import about from '../../Assets/About_Banner.jpg'
 import delivery from '../../Assets/Delivery.jpg'
 import support from '../../Assets/Customer_Support.jpg'
 import Footer from '../../Components/Footer/Footer.js'
-import './ExtraPages.css'
 
 const About = () => {
   useEffect(() => {

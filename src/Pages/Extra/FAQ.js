@@ -3,6 +3,8 @@ import Navbar from '../../Components/Navbar/Navbar'
 import faq from '../../Assets/FAQ.jpg'
 import SingleBanner from '../../Components/Banners/SingleBanner'
 import Footer from '../../Components/Footer/Footer'
+import './ExtraPages.css'
+
 const FAQ = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
