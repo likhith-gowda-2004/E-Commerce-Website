@@ -7,7 +7,7 @@ const UserProfile = () => {
   const {activepage} = useParams()
   return (
     <div>
-        <Navbar />
+        <Navbar reloadnavbar={false}/>
         <Footer />
     </div>
   )

@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
   }, [])
   return (
     <div>
-        <Navbar />
+        <Navbar reloadnavbar={false}/>
         <SingleBanner
           heading="Privacy Policy"
           bannerimage={privacypolicy} />

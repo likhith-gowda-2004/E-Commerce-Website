@@ -6,7 +6,7 @@ import './AuthPage.css'
 const Login = () => {
   return (
     <div className='auth-page'>
-        <Navbar />
+        <Navbar reloadnavbar={false}/>
         <div className='auth-container'>
             <form className='auth-form'>
                 <h1>Login</h1>

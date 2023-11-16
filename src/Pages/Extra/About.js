@@ -12,7 +12,7 @@ const About = () => {
   }, [])
   return (
     <div className='extra-page'>
-      <Navbar />
+      <Navbar reloadnavbar={false}/>
       <SingleBanner heading="About Us" bannerimage={about} />
       <div>
         <h1>Who are we?</h1>

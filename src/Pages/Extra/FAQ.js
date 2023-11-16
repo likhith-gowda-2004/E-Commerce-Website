@@ -11,7 +11,7 @@ const FAQ = () => {
   }, [])
   return (
     <div>
-        <Navbar />
+        <Navbar reloadnavbar={false}/>
         <SingleBanner
           heading="FAQs"
           bannerimage={faq} />

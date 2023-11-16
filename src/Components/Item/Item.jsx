@@ -1,16 +1,57 @@
 import React from 'react'
 import './Item.css'
+import { Link } from 'react-router-dom'
 
 const Item = (props) => {
   const [show, setshow] = React.useState(false)
-  const [qty, setqty] = React.useState(1)
+  const [count, setcount] = React.useState(1)
+  const [reloadnavbar, setreloadnavbar] = React.useState(false)
   const addtocart = () => {
-    let cart = JSON.parse(localStorage.getItem('cartQuantity'))
-    
+    let cart = JSON.parse(localStorage.getItem('cart'))
+    if(cart)
+    {
+      let itemincart = cart.find(item => item.id === props.id)
+      if(itemincart)
+      {
+        cart = cart.map(item => {
+          if(item.id === props.id)
+          {
+            return {
+              ...item,
+              quantity: item.quantity + count
+            }
+          }
+          else
+          {
+            return item
+          }
+        })
+        localStorage.setItem('cart', JSON.stringify(cart))
+      }
+      else
+      {
+        cart = [
+          ...cart,
+          {
+            props: props,
+            quantity: count
+          }
+        ]
+      }
+    }
+    else
+    {
+      cart = [{props, quantity: count}]
+      localStorage.setItem('cart', JSON.stringify(cart))
+    }
+    window.location.reload()
+    setreloadnavbar(!reloadnavbar)
   }
   return (
     <div className = 'item'>
+      <Link to={`/product/${props.id}`} className='item-link'>
         <img src = {props.image} alt =""/>
+        </Link>
         <p>{props.name}</p>
         <div className ="item-prices">
             <div className="item-price-new">
@@ -24,11 +65,11 @@ const Item = (props) => {
           show ? 
           <div className="add-button">
             <div className="qty">
-              <button onClick={() => {if(qty > 1){setqty(qty - 1)}}}>-</button>
-              <p>{qty}</p>
-              <button onClick={() => setqty(qty + 1)}>+</button>
+              <button onClick={() => {if(count > 1){setcount(count - 1)}}}>-</button>
+              <p>{count}</p>
+              <button onClick={() => setcount(count + 1)}>+</button>
             </div>
-            <button className='add-to-cart' onClick={() => {addtocart()}}>Add to cart</button>
+            <button className='add-to-cart' onClick={() => {setshow(false); addtocart()}}>Add to cart</button>
           </div>
           :
           <div className="add-button">
