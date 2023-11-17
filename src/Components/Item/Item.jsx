@@ -22,10 +22,9 @@ const Item = (props) => {
           {props.old_price}
         </div>
         <div className="item-buttons">
-      <button className="add-to-cart-button">+</button>
-      <button className="buy-now-button"></button>
-       
-      </div>
+    <AddShoppingCartIcon className="add-shopping-cart-icon"/>
+    <ShopIcon className="shop-icon"/>
+       </div>
 
       </div>
      
