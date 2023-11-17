@@ -6,7 +6,7 @@ import './AuthPage.css'
 const SignUp = () => {
   return (
     <div className='auth-page'>
-        <Navbar />
+        <Navbar reloadnavbar={false}/>
         <div className='auth-container'>
             <form className='auth-form'>
                 <h1>Sign Up</h1>

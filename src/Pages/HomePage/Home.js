@@ -7,7 +7,7 @@ import Newsletter from '../../Components/Newsletter/Newsletter'
 const Home = () => {
   return (
     <div>
-        <Navbar />
+        <Navbar reloadnavbar={false}/>
         <BannerSlider />
         <Newsletter />
         <Footer />
